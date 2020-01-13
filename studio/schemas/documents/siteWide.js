@@ -1,7 +1,7 @@
 export default {
-  name: 'siteSettings',
+  name: 'siteWide',
   type: 'document',
-  title: 'Site Settings',
+  title: 'Site Wide',
   __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
