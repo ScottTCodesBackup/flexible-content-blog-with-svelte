@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper export",
-    "export": "sapper export",
+    "export": "npm install && sapper export",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
