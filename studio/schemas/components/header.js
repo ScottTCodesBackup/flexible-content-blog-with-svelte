@@ -8,13 +8,13 @@ export default {
   fields: [
     {
       title: 'Header Text',
-      name: 'headerText',
+      name: 'text',
       type: 'text',
       validation: Rule =>
         Rule.required()
           .min(1)
           .max(50),
-    }
+    },
   ],
   preview: {
     prepare() {

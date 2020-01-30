@@ -28,6 +28,6 @@
 
 <div class="content">
  { #each page.components as item }
-    <svelte:component this={component[item._type]} {...item}/>    
+    <svelte:component this={component[item._type]} {...item} />    
  { /each }
 </div>
