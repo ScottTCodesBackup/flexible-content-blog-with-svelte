@@ -1,4 +1,4 @@
 [[headers]]
-  for = "https://flexible-content-blog-with-svelte-studio.netlify.com/*"
+  for = "/*"
   [headers.values]
-    X-Frame-Options = "ALLOW"
+    Access-Control-Allow-Origin = "*"
