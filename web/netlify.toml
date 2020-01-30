@@ -1,0 +1,4 @@
+[[headers]]
+  for = "https://flexible-content-blog-with-svelte-studio.netlify.com/*"
+  [headers.values]
+    X-Frame-Options = "ALLOW"

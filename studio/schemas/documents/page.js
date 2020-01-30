@@ -44,9 +44,6 @@ export default {
       type: 'seo-tools',
       options: {
         baseUrl: url,
-        baseUrl(doc) {
-          return url;
-        },
         slug(doc) {
           return doc.slug.current;
         },
