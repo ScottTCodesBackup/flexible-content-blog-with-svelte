@@ -1,5 +1,6 @@
 import sirv from 'sirv';
 import polka from 'polka';
+import cors from 'cors';
 import compression from 'compression';
 import * as sapper from '@sapper/server';
 
@@ -8,6 +9,7 @@ const dev = NODE_ENV === 'development';
 
 polka() // You can also use Express
 	.use(
+		cors({ origin: true }),
 		compression({ threshold: 0 }),
 		sirv('static', { dev }),
 		sapper.middleware()
