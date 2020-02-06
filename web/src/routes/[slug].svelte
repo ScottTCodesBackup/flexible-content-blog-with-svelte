@@ -2,7 +2,7 @@
   import client from "../sanityClient";
   import BlockContent from "@movingbrands/svelte-portable-text";
   import serializers from "../components/serializers";
-  import component from '../components/index.js';
+  import component from '../components/partials/index.js';
 
   export async function preload({ params }) {
     // the `slug` parameter is available because
@@ -20,10 +20,17 @@
 
 <script>
   export let page;
+  const { seo } = page;
+
+  console.log(page);
 </script>
 
 <svelte:head>
-  <title>{page.title}</title>
+  <title>{seo.seo_title}</title>
+  <meta name="description" content={seo.meta_description}>
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="robots" content="index, follow">
+  <link href="https://flexible-content-blog-with-svelte-web.netlify.com/{ page.slug.current }" rel="canonical">
 </svelte:head>
 
 <div class="content">
