@@ -3,4 +3,4 @@
   export let alt;
 </script>
 
-<img src={url} {alt} />
+<img src={url} alt={alt} />
