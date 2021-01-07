@@ -37,12 +37,18 @@ export default {
       description: 'Choose which components this page will display',
       showIcons: false,
       of: components,
+      options: {
+        collapsible: true,
+        collapsed: false,
+      }
     },
     {
       name: 'seo',
       title: 'SEO (Powered by Yoast)',
       type: 'seo-tools',
       options: {
+        collapsible: true,
+        collapsed: true,
         baseUrl: url,
         slug(doc) {
           return doc.slug.current;
