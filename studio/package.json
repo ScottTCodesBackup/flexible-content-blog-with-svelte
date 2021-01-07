@@ -28,8 +28,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "sanity-plugin-dashboard-widget-document-list": "^0.0.8",
-    "sanity-plugin-dashboard-widget-netlify": "^1.0.1",
-    "sanity-plugin-seo-tools": "^1.0.6"
+    "sanity-plugin-dashboard-widget-netlify": "^1.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
@@ -40,7 +39,6 @@
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-standard": "^4.0.1",
-    "prettier-eslint-cli": "^5.0.0"
+    "eslint-plugin-standard": "^4.0.1"
   }
 }
