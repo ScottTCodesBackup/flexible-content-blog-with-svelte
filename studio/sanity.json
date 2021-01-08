@@ -18,8 +18,7 @@
     "dashboard-widget-document-list",
     "dashboard-widget-netlify",
     "@sanity/code-input",
-    "@sanity/vision",
-    "seo-tools"
+    "@sanity/vision"
   ],
   "parts": [
     {
