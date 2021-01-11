@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "Flexible Content Blog"
+    "name": "flexible-content"
   },
   "api": {
-    "projectId": "xvunek01",
+    "projectId": "n1kchjn3",
     "dataset": "production"
   },
   "plugins": [
@@ -16,10 +16,15 @@
     "@sanity/desk-tool",
     "dashboard-widget-structure-menu",
     "dashboard-widget-document-list",
-    "dashboard-widget-netlify",
-    "@sanity/code-input",
-    "@sanity/vision"
+    "dashboard-widget-netlify"
   ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
   "parts": [
     {
       "name": "part:@sanity/base/schema",

@@ -20,14 +20,14 @@
 
 <script>
   export let page;
-  const { seo } = page;
-  const keywords = seo.focus_synonyms.join(",")
+  // const { seo } = page;
+  // const keywords = seo.focus_synonyms.join(",")
 </script>
 
 <svelte:head>
-  <title>{seo.seo_title}</title>
+  <!-- <title>{seo.seo_title}</title>
   <meta name="description" content={seo.meta_description}>
-  <meta name="keywords" content="{keywords}">
+  <meta name="keywords" content="{keywords}"> -->
   <meta name="robots" content="index, follow">
   <link href="https://flexible-content-blog-with-svelte-web.netlify.com/{ page.slug.current }" rel="canonical">
 </svelte:head>

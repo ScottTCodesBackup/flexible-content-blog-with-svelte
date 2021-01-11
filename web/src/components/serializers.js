@@ -5,7 +5,6 @@
 import urlBuilder from '@sanity/image-url';
 import client from '../sanityClient';
 import Image from './Image.svelte';
-import Code from './Code.svelte';
 import Author from './Author.svelte';
 import Link from './Link.svelte';
 
@@ -29,14 +28,6 @@ export default {
           .auto('format')
           .url(),
         alt: node.alt,
-      },
-    }),
-    code: ({ node: { code, language } }) => ({
-      component: Code,
-      childNodes: [],
-      props: {
-        code,
-        language,
       },
     }),
     authorReference: ({ children, node: { author } }) => ({

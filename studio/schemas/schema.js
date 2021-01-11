@@ -17,7 +17,7 @@ import bioPortableText from './objects/bioPortableText'
 import excerptPortableText from './objects/excerptPortableText'
 import mainImage from './objects/mainImage'
 import authorReference from './objects/authorReference'
-// import components from './components'
+import components from './components'
 
 export default createSchema({
   name: 'blog',
@@ -27,11 +27,11 @@ export default createSchema({
     page,
     category,
     author,
-    mainImage,
     authorReference,
+    mainImage,
     bodyPortableText,
     bioPortableText,
     excerptPortableText,
-    // components
+    ...components
   ])
 })
